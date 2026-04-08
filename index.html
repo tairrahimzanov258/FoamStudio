@@ -3,18 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>FoamStudio — Фигуры из пенопласта</title>
+  <meta name="description" content="FoamStudio — уникальные фигуры из пенопласта для рекламы, мероприятий и декора. Закажи сейчас!">
+  <meta name="keywords" content="пенопласт, буквы из пенопласта, 3D фигуры, логотипы, декор, рекламные фигуры">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f8f8f8; }
-    header { background:#ffcc00; padding:50px; text-align:center; }
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f8f8f8; line-height:1.6; }
+    header { background:#ffcc00; padding:60px 20px; text-align:center; }
     header h1 { margin:0; font-size:3em; }
-    header p { font-size:1.2em; }
-    .btn { display:inline-block; background:#ff6600; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:10px; }
-    section { padding:50px 20px; max-width:1000px; margin:auto; }
-    h2 { text-align:center; margin-bottom:30px; }
-    .grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-    .card { background:white; padding:20px; border-radius:10px; width:200px; text-align:center; box-shadow:0 0 10px rgba(0,0,0,0.1); }
-    .card img { width:100%; border-radius:10px; }
-    footer { background:#333; color:white; text-align:center; padding:30px; }
+    header p { font-size:1.2em; margin-top:10px; }
+    .btn { display:inline-block; background:#ff6600; color:white; padding:12px 25px; text-decoration:none; border-radius:5px; margin-top:15px; font-weight:bold; transition:0.3s; }
+    .btn:hover { background:#ff4500; transform:scale(1.05); }
+
+    section { padding:60px 20px; max-width:1000px; margin:auto; }
+    h2 { text-align:center; margin-bottom:40px; font-size:2em; }
+    .grid { display:flex; flex-wrap:wrap; gap:25px; justify-content:center; }
+    .card { background:white; padding:20px; border-radius:10px; width:220px; text-align:center; box-shadow:0 4px 15px rgba(0,0,0,0.1); transition:0.3s; }
+    .card:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.2); }
+    .card img { width:100%; border-radius:10px; margin-bottom:10px; }
+
+    #contacts p { text-align:center; margin:10px 0; font-size:1.1em; }
+    #contacts a { color:#ff6600; text-decoration:none; }
+    #contacts a:hover { text-decoration:underline; }
+
+    form { max-width:500px; margin:auto; display:flex; flex-direction:column; gap:15px; }
+    form input, form textarea { padding:10px; border-radius:5px; border:1px solid #ccc; width:100%; }
+    form button { width:fit-content; align-self:center; }
+
+    footer { background:#333; color:white; text-align:center; padding:30px; margin-top:40px; }
+
+    @media (max-width: 768px) {
+      .grid { flex-direction: column; align-items:center; }
+      .card { width:90%; }
+    }
   </style>
 </head>
 <body>
@@ -29,17 +49,17 @@
   <h2>Каталог товаров</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://via.placeholder.com/200x150" alt="Буквы и цифры">
+      <img src="https://via.placeholder.com/220x150" alt="Буквы и цифры">
       <h3>Буквы и цифры</h3>
       <p>От 5000 тг за букву</p>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/200x150" alt="Логотипы">
+      <img src="https://via.placeholder.com/220x150" alt="Логотипы">
       <h3>Логотипы</h3>
       <p>Индивидуальный дизайн</p>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/200x150" alt="3D Фигуры">
+      <img src="https://via.placeholder.com/220x150" alt="3D Фигуры">
       <h3>3D Фигуры</h3>
       <p>Любые размеры и формы</p>
     </div>
@@ -49,9 +69,9 @@
 <section id="portfolio">
   <h2>Примеры работ</h2>
   <div class="grid">
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Работа 1"></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Работа 2"></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Работа 3"></div>
+    <div class="card"><img src="https://via.placeholder.com/220x150" alt="Работа 1"></div>
+    <div class="card"><img src="https://via.placeholder.com/220x150" alt="Работа 2"></div>
+    <div class="card"><img src="https://via.placeholder.com/220x150" alt="Работа 3"></div>
   </div>
 </section>
 
@@ -68,6 +88,14 @@
   <h2>Контакты</h2>
   <p>WhatsApp: <a href="https://wa.me/7XXXXXXXXXX">+7 XXX XXX XXXX</a></p>
   <p>Instagram: <a href="https://instagram.com/твоя_страница" target="_blank">@твоя_страница</a></p>
+
+  <h2>Заказать прямо сейчас</h2>
+  <form action="#" method="post">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="tel" name="phone" placeholder="Телефон" required>
+    <textarea name="message" placeholder="Ваш заказ" rows="4"></textarea>
+    <button type="submit" class="btn">Отправить заявку</button>
+  </form>
 </section>
 
 <footer>
