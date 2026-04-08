@@ -1,18 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+  <meta charset="UTF-8">
   <title>FoamStudio — Фигуры из пенопласта</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f8f8f8; }
+    header { background:#ffcc00; padding:50px; text-align:center; }
+    header h1 { margin:0; font-size:3em; }
+    header p { font-size:1.2em; }
+    .btn { display:inline-block; background:#ff6600; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:10px; }
+    section { padding:50px 20px; max-width:1000px; margin:auto; }
+    h2 { text-align:center; margin-bottom:30px; }
+    .grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .card { background:white; padding:20px; border-radius:10px; width:200px; text-align:center; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+    .card img { width:100%; border-radius:10px; }
+    footer { background:#333; color:white; text-align:center; padding:30px; }
+  </style>
 </head>
 <body>
 
-<h1>FoamStudio</h1>
-<p>Изготавливаем уникальные фигуры из пенопласта для рекламы, мероприятий и декора.</p>
+<header>
+  <h1>FoamStudio</h1>
+  <p>Уникальные фигуры из пенопласта для рекламы, мероприятий и декора</p>
+  <a href="https://wa.me/7XXXXXXXXXX" class="btn">Заказать в WhatsApp</a>
+</header>
 
-<h2>Наши работы</h2>
-<p>Фото скоро будут здесь</p>
+<section id="catalog">
+  <h2>Каталог товаров</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/200x150" alt="Буквы и цифры">
+      <h3>Буквы и цифры</h3>
+      <p>От 5000 тг за букву</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200x150" alt="Логотипы">
+      <h3>Логотипы</h3>
+      <p>Индивидуальный дизайн</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200x150" alt="3D Фигуры">
+      <h3>3D Фигуры</h3>
+      <p>Любые размеры и формы</p>
+    </div>
+  </div>
+</section>
 
-<h2>Контакты</h2>
-<p>WhatsApp: +7 XXX XXX XXXX</p>
+<section id="portfolio">
+  <h2>Примеры работ</h2>
+  <div class="grid">
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Работа 1"></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Работа 2"></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Работа 3"></div>
+  </div>
+</section>
+
+<section id="advantages">
+  <h2>Почему выбирают нас</h2>
+  <div class="grid">
+    <div class="card"><h3>Быстро</h3><p>Изготовление в кратчайшие сроки</p></div>
+    <div class="card"><h3>Качественно</h3><p>Материалы высокого качества</p></div>
+    <div class="card"><h3>Индивидуально</h3><p>Под любой заказ и размер</p></div>
+  </div>
+</section>
+
+<section id="contacts">
+  <h2>Контакты</h2>
+  <p>WhatsApp: <a href="https://wa.me/7XXXXXXXXXX">+7 XXX XXX XXXX</a></p>
+  <p>Instagram: <a href="https://instagram.com/твоя_страница" target="_blank">@твоя_страница</a></p>
+</section>
+
+<footer>
+  &copy; 2026 FoamStudio. Все права защищены.
+</footer>
 
 </body>
 </html>
